@@ -38,41 +38,38 @@ const drawMoon = () => {
 drawMoon();
 
 // Draw Star
-const drawStar = (cx, cy, spikes, Or, Ir) => {
+const drawStar = (spikes) => {
     ctx.beginPath();
-    ctx.fillStyle = 'white';
-    ctx.strokeStyle = 'white';
-
-    let x = cx;
-    let y = cy;
-    const w = cx + 40;
-    const h = cy + 40;
-
-    ctx.moveTo(x - 20, y - 50)
-    ctx.lineTo(x - 10, y - 60)
-    ctx.lineTo(x, y - 50)
-    ctx.lineTo(x - 20, cy - 50)
-    ctx.fill()
+    ctx.moveTo(200, 400);
+    ctx.lineTo(220, 370);
+    ctx.lineTo(180, 370);
+    ctx.lineTo(165, 340);
+    ctx.lineTo(150, 370);
+    ctx.lineTo(120, 370);
+    ctx.lineTo(140, 400);
+    ctx.lineTo(110, 420);
+    ctx.lineTo(140, 435);
+    ctx.lineTo(130, 465);
+    ctx.lineTo(165, 465);
+    ctx.lineTo(180, 495);
+    ctx.lineTo(195, 465);
+    ctx.lineTo(240, 465);
+    ctx.lineTo(210, 435);
+    ctx.lineTo(240, 405);
+    ctx.lineTo(200, 400);
+    ctx.fill();
     ctx.stroke();
 
-    for (let i = 1; i <= spikes; i++) {
+    let triangles = 12
+    let i = 1
+    let x = 1
+    // console.log('I >', i);
+    console.log('I <', i - 1);
 
-        x = x - 17
-        y = y - 5
-        ctx.moveTo(x - 20, y - 50)
-        ctx.lineTo(x - 10, y - 60)
-        ctx.lineTo(x, y - 50)
-        ctx.lineTo(x - 20, cy - 50)
-        ctx.arc(x, y, 40, 0, Math.PI);
-        ctx.fillStyle = 'white'
-        ctx.fill()
-        ctx.stroke();
-
-        // ctx.moveTo(200, 400);
-        // ctx.lineTo(cx, cy);
-
+    for (i; i <= triangles; i++) {
+        i = i+i
+        console.log('I >', i);
     }
-    ctx.stroke();
 
 };
-drawStar(220, 410, 12);
+drawStar(12);
