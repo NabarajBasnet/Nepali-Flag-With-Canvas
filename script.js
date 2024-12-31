@@ -30,14 +30,14 @@ const drawMoon = () => {
     ctx.lineWidth = 2
     ctx.strokeStyle = 'white'
     ctx.fillStyle = 'white'
-    ctx.moveTo(210, 190);
-    ctx.lineTo(200, 170);
-    ctx.lineTo(185, 190);
-    ctx.lineTo(175, 170);
-    ctx.lineTo(160, 190);
-    ctx.lineTo(145, 170);
-    ctx.lineTo(135, 190);
-    ctx.arc(172, 190, 37, 0, Math.PI)
+    ctx.moveTo(230, 200);
+    ctx.lineTo(220, 180);
+    ctx.lineTo(205, 200);
+    ctx.lineTo(195, 180);
+    ctx.lineTo(180, 200);
+    ctx.lineTo(165, 180);
+    ctx.lineTo(155, 200);
+    ctx.arc(192, 200, 37, 0, Math.PI)
     ctx.fill();
     ctx.stroke();
 
