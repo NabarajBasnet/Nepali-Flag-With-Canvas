@@ -1,6 +1,7 @@
 const flag = document.getElementById('flag');
 const ctx = flag.getContext('2d');
 
+
 const createFlag = () => {
     ctx.strokeStyle = 'blue';
     ctx.fillStyle = 'red';
@@ -26,50 +27,47 @@ createFlag();
 const drawMoon = () => {
 
     ctx.beginPath();
-    ctx.fillStyle = 'white';
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = 'white';
-    ctx.arc(210, 190, 40, 0, Math.PI);
-    ctx.stroke();
+    ctx.lineWidth = 2
+    ctx.strokeStyle = 'white'
+    ctx.fillStyle = 'white'
+    ctx.moveTo(210, 190);
+    ctx.lineTo(200, 170);
+    ctx.lineTo(185, 190);
+    ctx.lineTo(175, 170);
+    ctx.lineTo(160, 190);
+    ctx.lineTo(145, 170);
+    ctx.lineTo(135, 190);
+    ctx.arc(172, 190, 37, 0, Math.PI)
     ctx.fill();
-
+    ctx.stroke();
 
 }
 drawMoon();
 
-// Draw Star
-const drawStar = (spikes) => {
+// Draw star function
+
+const drawStar = () => {
     ctx.beginPath();
-    ctx.moveTo(200, 400);
-    ctx.lineTo(220, 370);
-    ctx.lineTo(180, 370);
-    ctx.lineTo(165, 340);
-    ctx.lineTo(150, 370);
-    ctx.lineTo(120, 370);
-    ctx.lineTo(140, 400);
-    ctx.lineTo(110, 420);
-    ctx.lineTo(140, 435);
-    ctx.lineTo(130, 465);
-    ctx.lineTo(165, 465);
-    ctx.lineTo(180, 495);
-    ctx.lineTo(195, 465);
-    ctx.lineTo(240, 465);
-    ctx.lineTo(210, 435);
-    ctx.lineTo(240, 405);
-    ctx.lineTo(200, 400);
+    ctx.fillStyle = 'white';
+
+    ctx.moveTo(200, 390);
+    ctx.lineTo(190, 410);
+    ctx.lineTo(170, 420);
+    ctx.lineTo(190, 430);
+    ctx.lineTo(185, 455);
+    ctx.lineTo(210, 450);
+    ctx.lineTo(220, 470);
+    ctx.lineTo(235, 450);
+    ctx.lineTo(255, 470);
+    ctx.lineTo(260, 445);
+    ctx.lineTo(290, 450);
+    ctx.lineTo(280, 425);
+    ctx.lineTo(300, 400);
+    ctx.lineTo(270, 385);
+    ctx.lineTo(265, 355);
+    ctx.lineTo(235, 380);
+    ctx.lineTo(200, 360);
     ctx.fill();
-    ctx.stroke();
+}
 
-    let triangles = 12
-    let i = 1
-    let x = 1
-    // console.log('I >', i);
-    console.log('I <', i - 1);
-
-    for (i; i <= triangles; i++) {
-        i = i+i
-        console.log('I >', i);
-    }
-
-};
-drawStar(12);
+drawStar();
