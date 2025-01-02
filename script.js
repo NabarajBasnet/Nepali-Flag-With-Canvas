@@ -51,22 +51,30 @@ const drawStar = () => {
     ctx.fillStyle = 'white';
 
     ctx.moveTo(200, 390);
-    ctx.lineTo(190, 410);
-    ctx.lineTo(170, 420);
-    ctx.lineTo(190, 430);
-    ctx.lineTo(185, 455);
-    ctx.lineTo(210, 450);
-    ctx.lineTo(220, 470);
-    ctx.lineTo(235, 450);
-    ctx.lineTo(255, 470);
-    ctx.lineTo(260, 445);
-    ctx.lineTo(290, 450);
-    ctx.lineTo(280, 425);
-    ctx.lineTo(300, 400);
-    ctx.lineTo(270, 385);
-    ctx.lineTo(265, 355);
-    ctx.lineTo(235, 380);
-    ctx.lineTo(200, 360);
+
+    ctx.lineTo(195, 400);
+    ctx.lineTo(175, 395);
+    ctx.lineTo(185, 410);
+    ctx.lineTo(165, 415);
+    ctx.lineTo(180, 425);
+    ctx.lineTo(165, 435);
+    ctx.lineTo(180, 445);
+    ctx.lineTo(170, 460);
+    ctx.lineTo(190, 458);
+    ctx.lineTo(200, 475);
+    ctx.lineTo(210, 460);
+    ctx.lineTo(228, 472);
+    ctx.lineTo(230, 455);
+    ctx.lineTo(250, 455);
+    ctx.lineTo(243, 440);
+    ctx.lineTo(262, 435);
+    ctx.lineTo(242, 422);
+    ctx.lineTo(255, 405);
+    ctx.lineTo(235, 405);
+    ctx.lineTo(230, 380);
+    ctx.lineTo(220, 400);
+    ctx.closePath()
+    ctx.stroke();
     ctx.fill();
 }
 
